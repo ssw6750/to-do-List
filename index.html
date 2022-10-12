@@ -7,21 +7,42 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Momentum</title>
 </head>
-<body>
-    <form id="login-form" class="hidden">
-        <input required maxlength="15" type="text" placeholder="What is your name"/>
-        <input type="submit" value="Log In">
-    </form>
-    <h2 id="clock">00:00:00</h2>
-    <h1 id="greeting" class="hidden"></h1>
+<body class="fullImgBody">
+    <div class="textCenterDiv">
+        <div id = "greetingBox" class="hidden">
+            <h2 id="clock">00:00</h2>
+            <h1 id="greeting"></h1>
+        </div>       
+        <div class="login-box hidden">
+            <h2>로그인</h2>
+            <form id="login-form" name="myForm">
+                <div class="user-box">
+                    <input type="text" name="" required="">
+                    <label>Username</label>
+                </div>
+                <!-- <div class="user-box">
+                    <input type="password" name="" required="">
+                    <label>Password</label>
+                </div> -->
+                <a href="#" onclick="return onLoginSubmit(event)">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    확인
+                </a>
+            </form>
+        </div>
+    </div>
     <div id="quote">
         <span></span>
         <span></span>
     </div>
+
     <!-- <img src="img/0.jpeg" /> -->
     <script src="js/greetings.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/quotes.js"></script>
-    <script src="js/background.js"></script>
+    <!-- <script src="js/background.js"></script> -->
 </body>
 </html>
